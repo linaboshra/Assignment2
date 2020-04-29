@@ -23,4 +23,16 @@ package assignment2;
  */
 public class Tester {
     
+    /**
+     * @param args the command line arguments
+     */
+    
+    public static void main(String[] args){
+
+        System.out.println("*MAIN MENU*");
+        System.out.println("Select an option:");
+        System.out.println("1) Check Inventory");
+        System.out.println("2) Rent Book");
+        System.out.println("3) Deliver Book");
+    }
 }
