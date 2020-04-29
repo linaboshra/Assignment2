@@ -32,7 +32,14 @@ public class Library {
     private static int booksRented = 0;
     private static int booksAvailable = 0;
     
+    ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
+    public Library(){}
     
-    
-    
+    public Library(String title, String author, String ISBN, String yearOfPublishing){
+        this.title = title;
+        this.author = author;
+        this.ISBN = ISBN;
+        this.yearOfPublishing = yearOfPublishing;
+    }
+ 
 }
