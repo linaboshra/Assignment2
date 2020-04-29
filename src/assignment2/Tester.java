@@ -19,7 +19,7 @@ package assignment2;
 import java.util.Scanner;
 
 /**
- * This program runs the Library class.
+ * This program runs the LibraryBook class.
  * 
  * @author Lina's PC
  */
