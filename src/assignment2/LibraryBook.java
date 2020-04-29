@@ -30,7 +30,7 @@ public class LibraryBook {
     private String yearOfPublishing;
     private String availability;
     private static int booksRented = 0;
-    private static int booksAvailable = 0;
+    private static int booksAvailable = 5;
     
     ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
     public LibraryBook(){}
