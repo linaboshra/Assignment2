@@ -23,4 +23,16 @@ package assignment2;
  */
 public class Library {
     
+    //////////////////////////// ATTRIBUTES ////////////////////////////////////////
+    private String title;
+    private String author;
+    private String ISBN;
+    private String yearOfPublishing;
+    private static int booksTotal = 5;
+    private static int booksRented = 0;
+    private static int booksAvailable = 0;
+    
+    
+    
+    
 }
