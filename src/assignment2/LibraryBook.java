@@ -60,11 +60,9 @@ public class LibraryBook {
     LibraryBook book4 = new LibraryBook("Nineteen Eighty-Four", "George Orwell", "9781471331435", "1949");
     LibraryBook book5 = new LibraryBook("War and Peace", "Leo Tolstoy", "9781602523692", "1869");
     
-    
-    
-    
-    
-           
-    
+    ////////////////// TOSTRING METHOD /////////////////////////////////////////////
+    public String toString(){
+        return(title);
+    }
     
 }
