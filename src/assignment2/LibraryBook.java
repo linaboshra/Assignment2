@@ -31,16 +31,17 @@ public class LibraryBook {
     private static int booksTotal = 5;
     private static int booksRented = 0;
     private static int booksAvailable = 0;
-    private static String availability = "Available";
+    private String availability;
     
     ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
     public LibraryBook(){}
     
-    public LibraryBook(String title, String author, String ISBN, String yearOfPublishing){
+    public LibraryBook(String title, String author, String ISBN, String yearOfPublishing, String availability){
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
         this.yearOfPublishing = yearOfPublishing;
+        this.availability = availability;
     }
     
     /////////////////////// MUTATORS ///////////////////////////////////////////////
@@ -68,4 +69,8 @@ public class LibraryBook {
         System.out.println("Availability: " + availability);
     }
     
+    ///////////////////////////// ACCESSOR ////////////////////////////////////////
+    public String getAvailability(){
+        return availability;
+    }
 }
