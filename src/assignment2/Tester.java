@@ -32,34 +32,55 @@ public class Tester {
     public static void main(String[] args){
         
         /////////////////////// INVENTORY ///////////////////////////////////////////////
-        LibraryBook book1 = new LibraryBook("Pride and Prejudice", "Jane Austen", "9788938204547", "1813");
-        LibraryBook book2 = new LibraryBook("A Pocket Full of Rye", "Agatha Christie", "9788938204547", "1953");
-        LibraryBook book3 = new LibraryBook("Ulysses", "James Joyce", "9781443414913", "1922");
-        LibraryBook book4 = new LibraryBook("Nineteen Eighty-Four", "George Orwell", "9781471331435", "1949");
-        LibraryBook book5 = new LibraryBook("War and Peace", "Leo Tolstoy", "9781602523692", "1869");
+        LibraryBook book1 = new LibraryBook("Pride and Prejudice", "Jane Austen", "9788938204547", "1813", "Available");
+        LibraryBook book2 = new LibraryBook("A Pocket Full of Rye", "Agatha Christie", "9788938204547", "1953", "Available");
+        LibraryBook book3 = new LibraryBook("Ulysses", "James Joyce", "9781443414913", "1922", "Available");
+        LibraryBook book4 = new LibraryBook("Nineteen Eighty-Four", "George Orwell", "9781471331435", "1949", "Available");
+        LibraryBook book5 = new LibraryBook("War and Peace", "Leo Tolstoy", "9781602523692", "1869", "Available");
         
         Scanner sc = new Scanner(System.in);
+        boolean running = true;
+        
+        while (running == true){
 
-        System.out.println("*MAIN MENU*");
-        System.out.println("Select an option:");
-        System.out.println("1) Check Inventory");
-        System.out.println("2) Rent Book");
-        System.out.println("3) Deliver Book");
-        
-        String in = sc.nextLine();
-        
-        switch (in) {
-            case "1":
-                System.out.println("Select a book number to view its information");
-                System.out.println(book1);
-                System.out.println(book2);
-                break;
-            case "2":
-                System.out.println("");
-                break;
-            case "3":
-                System.out.println("");
-                break;
+            System.out.println("*MAIN MENU*");
+            System.out.println("Select a book number to view its information:");
+            System.out.println("1) " + book1);
+            System.out.println("2) " + book2);
+            System.out.println("3) " + book3);
+            System.out.println("4) " + book4);
+            System.out.println("5) " + book5);
+
+            String in = sc.nextLine();
+
+            switch (in) {
+                case "1":
+                    book1.printInfo();
+                    System.out.println("\n Select an option:");
+                    System.out.println("1) Rent Book");
+                    System.out.println("2) Deliver Book");
+                    System.out.println("3) Go Back to Main Menu");
+                    
+                    in = sc.nextLine();
+                    
+                    switch (in){
+                        case "1":
+                            //if
+                    }
+                    break;
+                case "2":
+                    book2.printInfo();
+                    break;
+                case "3":
+                    book3.printInfo();
+                    break;
+                case "4":
+                    book4.printInfo();
+                    break;
+                case "5":
+                    book5.printInfo();
+                    break;
+            }
         }
-    }
+    }    
 }
