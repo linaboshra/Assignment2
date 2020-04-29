@@ -31,6 +31,7 @@ public class LibraryBook {
     private static int booksTotal = 5;
     private static int booksRented = 0;
     private static int booksAvailable = 0;
+    private static String availability = "Available";
     
     ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
     public LibraryBook(){}
@@ -71,6 +72,7 @@ public class LibraryBook {
         System.out.println("Author: " + author);
         System.out.println("ISBN: " + ISBN);
         System.out.println("Year of publishing: " + yearOfPublishing);
+        System.out.println("Availability: " + availability);
     }
     
 }
