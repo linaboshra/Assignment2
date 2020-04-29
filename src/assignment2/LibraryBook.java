@@ -55,6 +55,14 @@ public class LibraryBook {
         booksAvailable ++;
     }
     
+    public void setAvailabile(){
+        availability = "Available";
+    }
+    
+    public void setRented(){
+        availability = "Rented";
+    }
+    
     ////////////////// TOSTRING METHOD /////////////////////////////////////////////
     public String toString(){
         return(title);
