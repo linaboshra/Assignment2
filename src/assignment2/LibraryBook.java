@@ -28,10 +28,9 @@ public class LibraryBook {
     private String author;
     private String ISBN;
     private String yearOfPublishing;
-    private static int booksTotal = 5;
+    private String availability;
     private static int booksRented = 0;
     private static int booksAvailable = 0;
-    private String availability;
     
     ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
     public LibraryBook(){}
@@ -77,8 +76,16 @@ public class LibraryBook {
         System.out.println("Availability: " + availability);
     }
     
-    ///////////////////////////// ACCESSOR ////////////////////////////////////////
+    ///////////////////////////// ACCESSORS ///////////////////////////////////////
     public String getAvailability(){
         return availability;
+    }
+    
+    public int getBooksRented(){
+        return booksRented;
+    }
+    
+    public int getBooksAvailable(){
+        return booksAvailable;
     }
 }
