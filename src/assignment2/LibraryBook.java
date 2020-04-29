@@ -21,7 +21,7 @@ package assignment2;
  * 
  * @author Lina's PC
  */
-public class Library {
+public class LibraryBook {
     
     //////////////////////////// ATTRIBUTES ////////////////////////////////////////
     private String title;
@@ -33,13 +33,26 @@ public class Library {
     private static int booksAvailable = 0;
     
     ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
-    public Library(){}
+    public LibraryBook(){}
     
-    public Library(String title, String author, String ISBN, String yearOfPublishing){
+    public LibraryBook(String title, String author, String ISBN, String yearOfPublishing){
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
         this.yearOfPublishing = yearOfPublishing;
     }
- 
+    
+    /////////////////////// MUTATORS ///////////////////////////////////////////////
+    public void rentBook(){
+        booksRented ++;
+        booksAvailable --;
+    }
+    
+    public void deliverBook(){
+        booksRented --;
+        booksAvailable ++;
+    }
+           
+    
+    
 }
