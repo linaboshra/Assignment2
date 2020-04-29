@@ -16,6 +16,8 @@
  */
 package assignment2;
 
+import java.util.Scanner;
+
 /**
  * This program runs the Library class.
  * 
@@ -28,11 +30,15 @@ public class Tester {
      */
     
     public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("*MAIN MENU*");
         System.out.println("Select an option:");
         System.out.println("1) Check Inventory");
         System.out.println("2) Rent Book");
         System.out.println("3) Deliver Book");
+        
+        String in = sc.nextLine();
     }
 }
