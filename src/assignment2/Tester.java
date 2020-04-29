@@ -40,5 +40,17 @@ public class Tester {
         System.out.println("3) Deliver Book");
         
         String in = sc.nextLine();
+        
+        switch (in) {
+            case "1":
+                System.out.println("");
+                break;
+            case "2":
+                System.out.println("");
+                break;
+            case "3":
+                System.out.println("");
+                break;
+        }
     }
 }
