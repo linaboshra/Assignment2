@@ -31,6 +31,13 @@ public class Tester {
     
     public static void main(String[] args){
         
+        /////////////////////// INVENTORY ///////////////////////////////////////////////
+        LibraryBook book1 = new LibraryBook("Pride and Prejudice", "Jane Austen", "9788938204547", "1813");
+        LibraryBook book2 = new LibraryBook("A Pocket Full of Rye", "Agatha Christie", "9788938204547", "1953");
+        LibraryBook book3 = new LibraryBook("Ulysses", "James Joyce", "9781443414913", "1922");
+        LibraryBook book4 = new LibraryBook("Nineteen Eighty-Four", "George Orwell", "9781471331435", "1949");
+        LibraryBook book5 = new LibraryBook("War and Peace", "Leo Tolstoy", "9781602523692", "1869");
+        
         Scanner sc = new Scanner(System.in);
 
         System.out.println("*MAIN MENU*");
@@ -43,7 +50,9 @@ public class Tester {
         
         switch (in) {
             case "1":
-                System.out.println("");
+                System.out.println("Select a book number to view its information");
+                System.out.println(book1);
+                System.out.println(book2);
                 break;
             case "2":
                 System.out.println("");
