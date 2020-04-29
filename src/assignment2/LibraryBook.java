@@ -65,4 +65,12 @@ public class LibraryBook {
         return(title);
     }
     
+    ////////////////// PRINT METHODS ///////////////////////////////////////////////
+    public void printInfo(){
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("ISBN: " + ISBN);
+        System.out.println("Year of publishing: " + yearOfPublishing);
+    }
+    
 }
