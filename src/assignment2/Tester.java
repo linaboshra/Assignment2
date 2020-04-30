@@ -31,7 +31,7 @@ public class Tester {
     
     public static void main(String[] args){
         
-        /////////////////////// INVENTORY ///////////////////////////////////////////////
+        /////////////////////// INVENTORY ////////////////////////////////////////////////////////////////////////////////////
         LibraryBook book1 = new LibraryBook("Pride and Prejudice", "Jane Austen", "9788938204547", "1813", "Available");
         LibraryBook book2 = new LibraryBook("A Pocket Full of Rye", "Agatha Christie", "9788938204547", "1953", "Available");
         LibraryBook book3 = new LibraryBook("Ulysses", "James Joyce", "9781443414913", "1922", "Available");
@@ -39,13 +39,13 @@ public class Tester {
         LibraryBook book5 = new LibraryBook("War and Peace", "Leo Tolstoy", "9781602523692", "1869", "Available");
         
         LibraryBook count = new LibraryBook();
-        /////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         Scanner sc = new Scanner(System.in);
         boolean running = true;
         
         while (running == true){
-
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             System.out.println("*MAIN MENU*");
             System.out.println("Select a book number to view its information:");
             System.out.println("1) " + book1);
@@ -53,9 +53,9 @@ public class Tester {
             System.out.println("3) " + book3);
             System.out.println("4) " + book4);
             System.out.println("5) " + book5);
-
+        
             String in = sc.nextLine();
-
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             switch (in) {
                 case "1":
                     book1.printInfo();
@@ -93,6 +93,7 @@ public class Tester {
                             break;
                     }
                     break;
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "2":
                     book2.printInfo();
                     System.out.println("\n Select an option:");
@@ -129,6 +130,7 @@ public class Tester {
                             break;
                     }
                     break;
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "3":
                     book3.printInfo();
                     System.out.println("\n Select an option:");
@@ -165,6 +167,7 @@ public class Tester {
                             break;
                     }
                     break;
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "4":
                     book4.printInfo();
                     System.out.println("\n Select an option:");
@@ -201,6 +204,7 @@ public class Tester {
                             break;
                     }
                     break;
+                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "5":
                     book5.printInfo();
                     System.out.println("\n Select an option:");
