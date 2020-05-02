@@ -21,7 +21,7 @@ import java.util.Scanner;
 /**
  * This program runs the LibraryBook class.
  * 
- * @author Lina's PC
+ * @author Lina Boshra
  */
 public class Tester {
     
@@ -46,7 +46,7 @@ public class Tester {
         
         while (running == true){
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            System.out.println("*MAIN MENU*");
+            System.out.println("\n*MAIN MENU*");
             System.out.println("Select a book number to view its information:");
             System.out.println("1) " + book1);
             System.out.println("2) " + book2);
@@ -59,34 +59,31 @@ public class Tester {
             switch (in) {
                 case "1":
                     book1.printInfo();
-                    System.out.println("\n Select an option:");
-                    System.out.println("1) Rent Book");
-                    System.out.println("2) Deliver Book");
-                    System.out.println("3) Go Back to Main Menu");
+                    book1.printOptions();
                     
                     in = sc.nextLine();
                     
                     switch (in){
                         case "1":
                             if ("Available".equals(book1.getAvailability())){
-                                System.out.println("You are now renting this book");
+                                System.out.println("\nYou are now renting this book");
                                 count.rentBook();
                                 book1.setRented();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are already renting this book");
+                                System.out.println("\nYou are already renting this book");
                             }
                             break;
                         case "2":
                             if ("Rented".equals(book1.getAvailability())){
-                                System.out.println("This book has now been delivered");
+                                System.out.println("\nThis book has now been delivered");
                                 count.deliverBook();
                                 book1.setAvailabile();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are not renting this book at the moment");
+                                System.out.println("\nYou are not renting this book at the moment");
                             }
                             break;
                         case "3":
@@ -96,34 +93,31 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "2":
                     book2.printInfo();
-                    System.out.println("\n Select an option:");
-                    System.out.println("1) Rent Book");
-                    System.out.println("2) Deliver Book");
-                    System.out.println("3) Go Back to Main Menu");
+                    book2.printOptions();
                     
                     in = sc.nextLine();
                     
                     switch (in){
                         case "1":
                             if ("Available".equals(book2.getAvailability())){
-                                System.out.println("You are now renting this book");
+                                System.out.println("\nYou are now renting this book");
                                 count.rentBook();
                                 book2.setRented();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are already renting this book");
+                                System.out.println("\nYou are already renting this book");
                             }
                             break;
                         case "2":
                             if ("Rented".equals(book2.getAvailability())){
-                                System.out.println("This book has now been delivered");
+                                System.out.println("\nThis book has now been delivered");
                                 count.deliverBook();
                                 book2.setAvailabile();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are not renting this book at the moment");
+                                System.out.println("\nYou are not renting this book at the moment");
                             }
                             break;
                         case "3":
@@ -133,34 +127,31 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "3":
                     book3.printInfo();
-                    System.out.println("\n Select an option:");
-                    System.out.println("1) Rent Book");
-                    System.out.println("2) Deliver Book");
-                    System.out.println("3) Go Back to Main Menu");
+                    book3.printOptions();
                     
                     in = sc.nextLine();
                     
                     switch (in){
                         case "1":
                             if ("Available".equals(book3.getAvailability())){
-                                System.out.println("You are now renting this book");
+                                System.out.println("\nYou are now renting this book");
                                 count.rentBook();
                                 book3.setRented();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are already renting this book");
+                                System.out.println("\nYou are already renting this book");
                             }
                             break;
                         case "2":
                             if ("Rented".equals(book3.getAvailability())){
-                                System.out.println("This book has now been delivered");
+                                System.out.println("\nThis book has now been delivered");
                                 count.deliverBook();
                                 book3.setAvailabile();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are not renting this book at the moment");
+                                System.out.println("\nYou are not renting this book at the moment");
                             }
                             break;
                         case "3":
@@ -170,34 +161,31 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "4":
                     book4.printInfo();
-                    System.out.println("\n Select an option:");
-                    System.out.println("1) Rent Book");
-                    System.out.println("2) Deliver Book");
-                    System.out.println("3) Go Back to Main Menu");
+                    book4.printOptions();
                     
                     in = sc.nextLine();
                     
                     switch (in){
                         case "1":
                             if ("Available".equals(book4.getAvailability())){
-                                System.out.println("You are now renting this book");
+                                System.out.println("\nYou are now renting this book");
                                 count.rentBook();
                                 book4.setRented();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are already renting this book");
+                                System.out.println("\nYou are already renting this book");
                             }
                             break;
                         case "2":
                             if ("Rented".equals(book4.getAvailability())){
-                                System.out.println("This book has now been delivered");
+                                System.out.println("\nThis book has now been delivered");
                                 count.deliverBook();
                                 book4.setAvailabile();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are not renting this book at the moment");
+                                System.out.println("\nYou are not renting this book at the moment");
                             }
                             break;
                         case "3":
@@ -207,34 +195,31 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "5":
                     book5.printInfo();
-                    System.out.println("\n Select an option:");
-                    System.out.println("1) Rent Book");
-                    System.out.println("2) Deliver Book");
-                    System.out.println("3) Go Back to Main Menu");
+                    book5.printOptions();
                     
                     in = sc.nextLine();
                     
                     switch (in){
                         case "1":
                             if ("Available".equals(book5.getAvailability())){
-                                System.out.println("You are now renting this book");
+                                System.out.println("\nYou are now renting this book");
                                 count.rentBook();
                                 book5.setRented();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are already renting this book");
+                                System.out.println("\nYou are already renting this book");
                             }
                             break;
                         case "2":
                             if ("Rented".equals(book5.getAvailability())){
-                                System.out.println("This book has now been delivered");
+                                System.out.println("\nThis book has now been delivered");
                                 count.deliverBook();
                                 book5.setAvailabile();
                                 System.out.println("Books rented: " + count.getBooksRented());
                                 System.out.println("Books available: " + count.getBooksAvailable());
                             } else{
-                                System.out.println("You are not renting this book at the moment");
+                                System.out.println("\nYou are not renting this book at the moment");
                             }
                             break;
                         case "3":
