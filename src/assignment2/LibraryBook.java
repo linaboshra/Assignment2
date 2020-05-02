@@ -19,7 +19,7 @@ package assignment2;
 /**
  * This class encapsulates the concept of a library rental system.
  * 
- * @author Lina's PC
+ * @author Lina Boshra
  */
 public class LibraryBook {
     
