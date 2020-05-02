@@ -69,11 +69,18 @@ public class LibraryBook {
     
     ////////////////// PRINT METHODS ///////////////////////////////////////////////
     public void printInfo(){
-        System.out.println("Title: " + title);
+        System.out.println("\nTitle: " + title);
         System.out.println("Author: " + author);
         System.out.println("ISBN: " + ISBN);
         System.out.println("Year of publishing: " + yearOfPublishing);
         System.out.println("Availability: " + availability);
+    }
+    
+    public void printOptions(){
+        System.out.println("\n Select an option:");
+        System.out.println("1) Rent Book");
+        System.out.println("2) Deliver Book");
+        System.out.println("3) Go Back to Main Menu");
     }
     
     ///////////////////////////// ACCESSORS ///////////////////////////////////////
