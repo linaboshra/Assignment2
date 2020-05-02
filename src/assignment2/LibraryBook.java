@@ -78,9 +78,9 @@ public class LibraryBook {
     
     public void printOptions(){
         System.out.println("\n Select an option:");
-        System.out.println("1) Rent Book");
-        System.out.println("2) Deliver Book");
-        System.out.println("3) Go Back to Main Menu");
+        System.out.println("1) Rent book");
+        System.out.println("2) Deliver book");
+        System.out.println("3) Go back to Main Menu");
     }
     
     ///////////////////////////// ACCESSORS ///////////////////////////////////////
@@ -97,13 +97,11 @@ public class LibraryBook {
     }
     
     ///////////////////////////// ISBN CHECK ///////////////////////////////////////
-    public boolean isISBNvalid(){
+    public String isISBNvalid(){
         int length = ISBN.length();
         int sum = 0;
     
-        if (length != 13){
-         return false;
-        } else{
+        if (length == 13){
             int check = ISBN.charAt(12);
             for (int i = 0; i < 12; i ++){
                 int digit = ISBN.charAt(i);
@@ -114,7 +112,13 @@ public class LibraryBook {
                 }
             }
             int result = sum % 10;
-            return 10 - result == check;
-        }   
+            if (10 - result == check){
+                return "yes";
+            } else {
+                return "no";
+            }
+        } else{
+            return "no";
+        }
     }
 }
