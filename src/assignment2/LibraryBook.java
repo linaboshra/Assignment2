@@ -95,4 +95,26 @@ public class LibraryBook {
     public int getBooksAvailable(){
         return booksAvailable;
     }
+    
+    ///////////////////////////// ISBN CHECK ///////////////////////////////////////
+    public boolean isISBNvalid(){
+        int length = ISBN.length();
+        int sum = 0;
+    
+        if (length != 13){
+         return false;
+        } else{
+            int check = ISBN.charAt(12);
+            for (int i = 0; i < 12; i ++){
+                int digit = ISBN.charAt(i);
+                if (i % 2 == 0){
+                    sum += digit;
+                } else{
+                    sum += (digit * 3);
+                }
+            }
+            int result = sum % 10;
+            return 10 - result == check;
+        }   
+    }
 }
