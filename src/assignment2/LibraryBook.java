@@ -102,9 +102,9 @@ public class LibraryBook {
         int sum = 0;
     
         if (length == 13){
-            int check = ISBN.charAt(12);
+            int check = Integer.parseInt( ISBN.substring(12));
             for (int i = 0; i < 12; i ++){
-                int digit = ISBN.charAt(i);
+                int digit = Integer.parseInt( ISBN.substring( i, i + 1 ) );
                 if (i % 2 == 0){
                     sum += digit;
                 } else{
