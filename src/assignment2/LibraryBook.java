@@ -120,5 +120,13 @@ public class LibraryBook {
         } else{
             return "no";
         }
+    /* To validate a  13-digit ISBN:
+     *   
+     * -Take the first 12 digits of the ISBN
+     * -Multiply the first digit by 1, the next by 3
+     * -Repeat this process then add the preceding 12 products
+     * -Divide the result by 10, subtract the remainder from 10
+     * -If this number is equal to the 13th digit of the ISBN, it is a valid ISBN
+     */
     }
 }
