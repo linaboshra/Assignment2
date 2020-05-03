@@ -59,6 +59,7 @@ public class Tester {
             switch (in) {
                 case "1":
                     book1.printInfo();
+                    System.out.println("Is this ISBN valid? " + book1.isISBNvalid());
                     book1.printOptions();
                     
                     in = sc.nextLine();
@@ -93,6 +94,7 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "2":
                     book2.printInfo();
+                    System.out.println("Is this ISBN valid? " + book2.isISBNvalid());
                     book2.printOptions();
                     
                     in = sc.nextLine();
@@ -127,6 +129,7 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "3":
                     book3.printInfo();
+                    System.out.println("Is this ISBN valid? " + book3.isISBNvalid());
                     book3.printOptions();
                     
                     in = sc.nextLine();
@@ -161,6 +164,7 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "4":
                     book4.printInfo();
+                    System.out.println("Is this ISBN valid? " + book4.isISBNvalid());
                     book4.printOptions();
                     
                     in = sc.nextLine();
@@ -195,6 +199,7 @@ public class Tester {
                 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                 case "5":
                     book5.printInfo();
+                    System.out.println("Is this ISBN valid? " + book5.isISBNvalid());
                     book5.printOptions();
                     
                     in = sc.nextLine();
