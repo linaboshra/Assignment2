@@ -43,9 +43,10 @@ public class Tester {
         
         Scanner sc = new Scanner(System.in);
         boolean running = true;
+        String bookSwitch = "0";
         
         while (running == true){
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /** This is the main menu, it is reoccurring *////////////////////////////////////////////////////////////////////////
             System.out.println("\n*MAIN MENU*");
             System.out.println("Select a book number to view its information:");
             System.out.println("1) " + book1);
@@ -53,10 +54,40 @@ public class Tester {
             System.out.println("3) " + book3);
             System.out.println("4) " + book4);
             System.out.println("5) " + book5);
+            System.out.println("6) Select a random book");
         
             String in = sc.nextLine();
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            
+        /** This section is in place for the random selection option *////////////////////////////////////////////////////////
             switch (in) {
+                case "1":
+                    bookSwitch = "1";
+                    break;
+                case "2":
+                    bookSwitch = "2";
+                    break;
+                case "3":
+                    bookSwitch = "3";
+                    break;
+                case "4":
+                    bookSwitch = "4";
+                    break;
+                case "5":
+                    bookSwitch = "5";
+                    break;
+                case "6":
+                    String randomNumber = Integer.toString((int) (Math.random() * 5 + 1));
+                    if (randomNumber == "6") {
+                        bookSwitch = "5";
+                    }
+                    else {
+                    bookSwitch = randomNumber;
+                    }
+                    break;
+            }
+      
+        /** The following sections represent the options menu for each of the 5 books *///////////////////////////////////////
+            switch (bookSwitch) {
                 case "1":
                     book1.printInfo();
                     System.out.println("Is this ISBN valid? " + book1.isISBNvalid());
@@ -91,7 +122,7 @@ public class Tester {
                             break;
                     }
                     break;
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
                 case "2":
                     book2.printInfo();
                     System.out.println("Is this ISBN valid? " + book2.isISBNvalid());
@@ -126,7 +157,7 @@ public class Tester {
                             break;
                     }
                     break;
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
                 case "3":
                     book3.printInfo();
                     System.out.println("Is this ISBN valid? " + book3.isISBNvalid());
@@ -161,7 +192,7 @@ public class Tester {
                             break;
                     }
                     break;
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
                 case "4":
                     book4.printInfo();
                     System.out.println("Is this ISBN valid? " + book4.isISBNvalid());
@@ -196,7 +227,7 @@ public class Tester {
                             break;
                     }
                     break;
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
                 case "5":
                     book5.printInfo();
                     System.out.println("Is this ISBN valid? " + book5.isISBNvalid());
