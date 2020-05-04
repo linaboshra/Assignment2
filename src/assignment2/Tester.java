@@ -87,8 +87,7 @@ public class Tester {
                         String randomNumber = Integer.toString((int) (Math.random() * 5 + 1));
                         if (randomNumber == "6") {
                             bookSwitch = "5";
-                        }
-                        else {
+                        } else {
                         bookSwitch = randomNumber;
                         }
                         break;
@@ -111,7 +110,7 @@ public class Tester {
                                     book1.setRented();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are already renting this book");
                                 }
                                 break;
@@ -122,7 +121,7 @@ public class Tester {
                                     book1.setAvailabile();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are not renting this book at the moment");
                                 }
                                 break;
@@ -130,7 +129,7 @@ public class Tester {
                                 break;
                         }
                         break;
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
                     case "2":
                         book2.printInfo();
                         System.out.println("Is this ISBN valid? " + book2.isISBNvalid());
@@ -146,7 +145,7 @@ public class Tester {
                                     book2.setRented();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are already renting this book");
                                 }
                                 break;
@@ -157,7 +156,7 @@ public class Tester {
                                     book2.setAvailabile();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are not renting this book at the moment");
                                 }
                                 break;
@@ -165,7 +164,7 @@ public class Tester {
                                 break;
                         }
                         break;
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     case "3":
                         book3.printInfo();
                         System.out.println("Is this ISBN valid? " + book3.isISBNvalid());
@@ -181,7 +180,7 @@ public class Tester {
                                     book3.setRented();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are already renting this book");
                                 }
                                 break;
@@ -192,7 +191,7 @@ public class Tester {
                                     book3.setAvailabile();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are not renting this book at the moment");
                                 }
                                 break;
@@ -200,7 +199,7 @@ public class Tester {
                                 break;
                         }
                         break;
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  
                     case "4":
                         book4.printInfo();
                         System.out.println("Is this ISBN valid? " + book4.isISBNvalid());
@@ -216,7 +215,7 @@ public class Tester {
                                     book4.setRented();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are already renting this book");
                                 }
                                 break;
@@ -227,7 +226,7 @@ public class Tester {
                                     book4.setAvailabile();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are not renting this book at the moment");
                                 }
                                 break;
@@ -235,7 +234,7 @@ public class Tester {
                                 break;
                         }
                         break;
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////      
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
                     case "5":
                         book5.printInfo();
                         System.out.println("Is this ISBN valid? " + book5.isISBNvalid());
@@ -251,7 +250,7 @@ public class Tester {
                                     book5.setRented();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are already renting this book");
                                 }
                                 break;
@@ -262,7 +261,7 @@ public class Tester {
                                     book5.setAvailabile();
                                     System.out.println("Books rented: " + count.getBooksRented());
                                     System.out.println("Books available: " + count.getBooksAvailable());
-                                } else{
+                                } else {
                                     System.out.println("\nYou are not renting this book at the moment");
                                 }
                                 break;
