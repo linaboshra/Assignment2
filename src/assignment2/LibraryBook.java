@@ -113,12 +113,12 @@ public class LibraryBook {
             }
             int result = sum % 10;
             if (10 - result == check){
-                return "yes";
+                return "Yes";
             } else {
-                return "no";
+                return "No";
             }
         } else {
-            return "no";
+            return "No";
         }
     /* To validate a  13-digit ISBN:
      *   
