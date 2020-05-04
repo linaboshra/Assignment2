@@ -23,7 +23,7 @@ package assignment2;
  */
 public class LibraryBook {
     
-    //////////////////////////// ATTRIBUTES ////////////////////////////////////////
+    //////////////////////////// ATTRIBUTES /////////////////////////////////////////////////////////////////////
     private String title;
     private String author;
     private String ISBN;
@@ -32,7 +32,7 @@ public class LibraryBook {
     private static int booksRented = 0;
     private static int booksAvailable = 5;
     
-    ////////////////////////// CONSTRUCTORS ////////////////////////////////////////
+    ////////////////////////// CONSTRUCTORS /////////////////////////////////////////////////////////////////////
     public LibraryBook(){}
     
     public LibraryBook(String title, String author, String ISBN, String yearOfPublishing, String availability){
@@ -43,7 +43,7 @@ public class LibraryBook {
         this.availability = availability;
     }
     
-    /////////////////////// MUTATORS ///////////////////////////////////////////////
+    /////////////////////// MUTATORS ////////////////////////////////////////////////////////////////////////////
     public void rentBook(){
         booksRented ++;
         booksAvailable --;
@@ -62,12 +62,12 @@ public class LibraryBook {
         availability = "Rented";
     }
     
-    ////////////////// TOSTRING METHOD /////////////////////////////////////////////
+    ////////////////// TOSTRING METHOD //////////////////////////////////////////////////////////////////////////
     public String toString(){
         return(title);
     }
     
-    ////////////////// PRINT METHODS ///////////////////////////////////////////////
+    ////////////////// PRINT METHODS ////////////////////////////////////////////////////////////////////////////
     public void printInfo(){
         System.out.println("\nTitle: " + title);
         System.out.println("Author: " + author);
@@ -83,7 +83,7 @@ public class LibraryBook {
         System.out.println("3) Go back to Main Menu");
     }
     
-    ///////////////////////////// ACCESSORS ///////////////////////////////////////
+    ///////////////////////////// ACCESSORS /////////////////////////////////////////////////////////////////////
     public String getAvailability(){
         return availability;
     }
@@ -96,7 +96,7 @@ public class LibraryBook {
         return booksAvailable;
     }
     
-    ///////////////////////////// ISBN CHECK ///////////////////////////////////////
+    ///////////////////////////// ISBN CHECK ////////////////////////////////////////////////////////////////////
     public String isISBNvalid(){
         int length = ISBN.length();
         int sum = 0;
@@ -122,11 +122,11 @@ public class LibraryBook {
         }
     /* To validate a  13-digit ISBN:
      *   
-     * -Take the first 12 digits of the ISBN
-     * -Multiply the first digit by 1, the next by 3
-     * -Repeat this process then add the preceding 12 products
-     * -Divide the result by 10, subtract the remainder from 10
-     * -If this number is equal to the 13th digit of the ISBN, it is a valid ISBN
+     * - Take the first 12 digits of the ISBN
+     * - Multiply the first digit by 1, the next by 3
+     * - Repeat this process then add the preceding 12 products
+     * - Divide the result by 10, subtract the remainder from 10
+     * - If this number is equal to the 13th digit of the ISBN, it is a valid ISBN
      */
     }
 }
