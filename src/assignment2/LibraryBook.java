@@ -107,7 +107,7 @@ public class LibraryBook {
                 int digit = Integer.parseInt( ISBN.substring( i, i + 1 ) );
                 if (i % 2 == 0){
                     sum += digit;
-                } else{
+                } else {
                     sum += (digit * 3);
                 }
             }
@@ -117,7 +117,7 @@ public class LibraryBook {
             } else {
                 return "no";
             }
-        } else{
+        } else {
             return "no";
         }
     /* To validate a  13-digit ISBN:
